@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+}
+/* main */
+.main{
+    background-color: #424242;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    padding: 15px 40px;
+}
+.main__check{
+    padding: 30px;
+    background-color: aliceblue;
+    max-height: 310px;
+    border-radius: 15px;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-right: 30px;
+
+}
+.main__select{
+    width: 177px;
+    overflow: hidden;
+}
+
+
+/* check box */
+.check{
+    visibility: hidden;
+    position: relative;
+}
+.castom-check{
+    position: relative;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    align-items: center;
+    padding-left: 33px;
+}
+.check-box{
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: solid 2px yellow;
+    border-radius: 5px;
+    
+}
+.check:checked{
+   
+    visibility: visible;
+}
+.check:checked + .check-box{
+    
+    background: url(../img/Rectangle\ 99.svg) no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+/* select */
+.choices, .is-open .choices__inner, .choices__inner{
+    border-radius: 15px ; 
+    background-color: white;
+    color: #000;
+    width: 176px;
+    max-width: 176px;
+  
+    z-index: 5;
+    max-width: 176px;
+    min-width: 175px;
+    
+
+}
+.is-open .choices__list--dropdown, .is-open .choices__list[aria-expanded]{
+    background-color: white;
+    border-radius:  0  0 15px 15px;
+    transform: translateY(-10px);
+    z-index: -1;
+}
+.choices[data-type*=select-one] .choices__inner {
+   display: flex;
+   align-items: center;
+    justify-content: center;
+    padding-left: 10px 0 10px 20px;
+    
+   
+}
+#choices--select-item-choice-1{
+    padding-top: 30px;
+    
+}
+.choices__list--dropdown .choices__placeholder {
+    display: none;
+    }
+ .choices[data-type*=select-one]::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-bottom: 1px #000 solid;
+    border-right: 1px #000 solid;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+ }
+ .choices[data-type*=select-one].is-open::after {
+    margin: none;
+    transform: rotate(225deg);
+    border-bottom: 1px #CCB26E solid;
+    border-right: 1px #CCB26E solid;
+    transition: transform 0.3s ease;
+
+    
+ }
