@@ -40,5 +40,36 @@ myMap.geoObjects.add(myPlacemark)
     
 }
 
+// 
+//   
+var selector = document.querySelector("input[type='tel']");
+
+var im = new Inputmask("+7(999)-9999999");
+im.mask(selector);
+
+// 
+const validation = new JustValidate('#form');
+
+validation
+  .addField('#name', [
+    {
+      rule: 'minLength',
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+  ])
+  .addField('#email', [
+    {
+      rule: 'required',
+      errorMessage: 'Email is required',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email is invalid!',
+    },
+  ]);
 
   

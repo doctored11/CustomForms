@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
     <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
 </head>
 
 <body class="">
@@ -72,9 +76,64 @@
     <div class="">
         <div id="map" style="width: 600px; height: 400px"></div>
     </div>
+    <div class="">
+        <div class="main__scroll" data-simplebar >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veritatis quo placeat laborum quas at obcaecati suscipit earum. Inventore distinctio quibusdam consequuntur quasi eveniet expedita beatae excepturi neque impedit ipsum!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veritatis quo placeat laborum quas at obcaecati suscipit earum. Inventore distinctio quibusdam consequuntur quasi eveniet expedita beatae excepturi neque impedit ipsum!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veritatis quo placeat laborum quas at obcaecati suscipit earum. Inventore distinctio quibusdam consequuntur quasi eveniet expedita beatae excepturi neque impedit ipsum!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veritatis quo placeat laborum quas at obcaecati suscipit earum. Inventore distinctio quibusdam consequuntur quasi eveniet expedita beatae excepturi neque impedit ipsum!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veritatis quo placeat laborum quas at obcaecati suscipit earum. Inventore distinctio quibusdam consequuntur quasi eveniet expedita beatae excepturi neque impedit ipsum!
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veritatis quo placeat laborum quas at obcaecati suscipit earum. Inventore distinctio quibusdam consequuntur quasi eveniet expedita beatae excepturi neque impedit ipsum!
+
+        </div>
+    </div>
+    <div class="main__validation-form contact-form">
+
+        <form action="#" id="form" autocomplete="off" class="contact-form__form form">
+            <div class=" form__input-box">
+            <input type="text"
+            class="form__input form-control"
+            placeholder=" name"
+            autocomplete="off"
+            name="name"
+            id="name" >
+        </div>
+<div class=" form__input-box">
+            <input type="tel" 
+            name="tel" 
+            autocomplete="off"
+            id="tel"
+            class="form__input form-control" 
+            placeholder="телефон"  
+            data-validate-field="tel" >
+        </div>
+<div class=" form__input-box">
+            <input type="email"
+            class="form__input form-control"
+            placeholder="Enter your email"
+            autocomplete="off"
+            name="email"
+            id="email" >
+        </div>
+            <button class="btn btn-primary" id="submit-btn">Submit</button>
+
+
+
+
+        </form>
+    </div>
     
-</div>
+</div><script src="lib/Inputmask-5.x/dist/inputmask.js"></script>
+<script>
+    const validate = new window.JustValidate('#form');
+  </script>
+  
 <script src="js/choices.min.js"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
 </script>
 <script src="js/script.js"></script>
