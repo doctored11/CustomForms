@@ -70,6 +70,30 @@ validation
       rule: 'email',
       errorMessage: 'Email is invalid!',
     },
-  ]);
+  ])
+  .addField('#tel', [
+    {
+      rule: 'required',
+      errorMessage: 'tel is required',
+    },
+    {
+      rule: 'minLength',
+      value: 10,
+      //  как написать свою функцию(правило)😔?
+      //function ()=>{}
+      
+      // rule: 'number',
+      // errorMessage: 'tel1 is not tel',
+      
+      // rule: 'minLength',
+      // value: 10,
+      // errorMessage: 'tel2 is not tel',
+      // rule: 'maxLe3ngth',
+      // value: 14,
+      // errorMessage: 'tel3 is not tel',
+     
+    },
+  ])
+  ;
 
   
