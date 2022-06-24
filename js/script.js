@@ -44,7 +44,7 @@ myMap.geoObjects.add(myPlacemark)
 //   
 var selector = document.querySelector("input[type='tel']");
 
-var im = new Inputmask("+7(999)-9999999");
+var im = new Inputmask("+7 (999) — 9999999");
 im.mask(selector);
 
 // 
@@ -52,6 +52,10 @@ const validation = new JustValidate('#form');
 
 validation
   .addField('#name', [
+    {
+      rule: 'required',
+      errorMessage: 'Name is required',
+    },
     {
       rule: 'minLength',
       value: 3,
@@ -77,20 +81,15 @@ validation
       errorMessage: 'tel is required',
     },
     {
-      rule: 'minLength',
-      value: 10,
-      //  как написать свою функцию(правило)😔?
-      //function ()=>{}
       
-      // rule: 'number',
-      // errorMessage: 'tel1 is not tel',
-      
-      // rule: 'minLength',
-      // value: 10,
-      // errorMessage: 'tel2 is not tel',
-      // rule: 'maxLe3ngth',
-      // value: 14,
-      // errorMessage: 'tel3 is not tel',
+      validator :(name,value)=>
+      {
+        const phone = selector.inputmask.unmaskedvalue()
+        console.log(phone)
+        return Number(phone)&& phone.length == 10
+        
+      },
+      errorMessage: 'Tel too short'
      
     },
   ])
