@@ -188,6 +188,9 @@
   border-radius: 15px;
   color: #fff;
 }
+.btn-primary:active {
+  background-color: #ae4204;
+}
 
 /* title ℹ︎ */
 
