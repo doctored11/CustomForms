@@ -3,8 +3,8 @@
 ---
 
 В этом репозитории вы можете найти простую стилизацию форм, которые трудно стилизовать.
-Для предосмотра перейдите по [ссылке](https://doctored11.github.io/CastomForms/ "предосмотр на github pages")
-Для разбора лучше скачать весь [архив](https://github.com/doctored11/CastomForms/archive/refs/heads/main.zip "Скачать с github")
+Для предосмотра перейдите по [ссылке](https://doctored11.github.io/CustomForms/ "предосмотр на github pages")
+Для разбора лучше скачать весь [архив](https://github.com/doctored11/CustomForms/archive/refs/heads/main.zip "Скачать с github")
 
 ---
 
