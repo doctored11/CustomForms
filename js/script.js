@@ -17,13 +17,14 @@ function init(){
     // Создание карты.
     var myMap = new ymaps.Map("map", {
         
-        center: [55.76, 37.64],
+        center: [48.87 ,2.35],
+        // [48.876952043215624,2.3558630000000598]
         
         zoom: 7
     });
     
 
-    myPlacemark = new ymaps.Placemark([55.76, 37.64], {}, {
+    myPlacemark = new ymaps.Placemark([48.87695,2.355863], {}, {
         
         iconLayout: 'default#image',
         // Своё изображение иконки метки.
@@ -54,7 +55,7 @@ validation
   .addField('#name', [
     {
       rule: 'required',
-      errorMessage: 'Name is required',
+      errorMessage: 'Name is required 😡',
     },
     {
       rule: 'minLength',
@@ -68,17 +69,17 @@ validation
   .addField('#email', [
     {
       rule: 'required',
-      errorMessage: 'Email is required',
+      errorMessage: 'Email is required 😡',
     },
     {
       rule: 'email',
-      errorMessage: 'Email is invalid!',
+      errorMessage: 'Email is invalid! 🤬',
     },
   ])
   .addField('#tel', [
     {
       rule: 'required',
-      errorMessage: 'tel is required',
+      errorMessage: 'tel is required 😡',
     },
     {
       
@@ -89,7 +90,7 @@ validation
         return Number(phone)&& phone.length == 10
         
       },
-      errorMessage: 'Tel too short'
+      errorMessage: 'Tel too short ⚠️'
      
     },
   ])
